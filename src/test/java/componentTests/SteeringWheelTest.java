@@ -1,3 +1,5 @@
+package componentTests;
+
 import org.junit.Before;
 import org.junit.Test;
 import vehicleComponents.SteeringWheel;
