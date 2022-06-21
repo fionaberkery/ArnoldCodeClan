@@ -19,4 +19,14 @@ public class Customer {
     public int getOwnedVehicles() {
         return ownedVehicles.size();
     }
+
+    public String buyVehicle(Vehicle vehicle) {
+        if (this.wallet >= vehicle.getPrice()){
+            this.wallet -= vehicle.getPrice();
+            ownedVehicles.add(vehicle);
+            return "Here's your new car";
+        } else {
+            return "Not enough money";
+        }}
+
 }
